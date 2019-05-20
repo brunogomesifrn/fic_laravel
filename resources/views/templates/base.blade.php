@@ -64,7 +64,6 @@
               <i class="fa fa-user"></i> Perfil
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="/perfil_dados">Meus Dados</a>
               <a class="dropdown-item" href="/perfil_inscricoes">Inscrições</a>
               <a class="dropdown-item" href="/perfil_icursos">Cursos</a>
             </div>

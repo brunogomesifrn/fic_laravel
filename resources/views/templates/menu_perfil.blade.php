@@ -1,7 +1,6 @@
 <div class="col-lg-3 mb-4">
     <div class="list-group">
       <a href="/perfil" class="list-group-item">Início</a>
-      <a href="/perfil_dados" class="list-group-item">Perfil</a>
       <a href="/perfil_inscricoes" class="list-group-item">Inscrições</a>
 
       @if(Auth::user()->is_coordenador == 1)
