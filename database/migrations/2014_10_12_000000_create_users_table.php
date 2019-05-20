@@ -15,11 +15,16 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('cpf', 11);
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->string('apelido');
+            $table->string('matricula', 14);
+            $table->string('celular');
+            $table->integer('is_coordenador')->unsigned()->default(0);
             $table->timestamps();
         });
     }

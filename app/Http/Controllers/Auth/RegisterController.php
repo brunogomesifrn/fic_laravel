@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/perfil';
 
     /**
      * Create a new controller instance.
@@ -66,6 +66,10 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'cpf' => $data['cpf'],
+            'matricula' => $data['matricula'],
+            'celular' => $data['celular'],
+            'apelido' => $data['apelido'],
             'password' => Hash::make($data['password']),
         ]);
     }
